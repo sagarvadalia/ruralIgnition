@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+bodybody {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background-color: lightgreen;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #lightblue;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #lightgreen;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="whoweare.html">Who We Are</a>
+  <a href="sudugini.html">Sudu Gini Clean Cookstove</a>
+  <a href="ourteam.html">Our Team</a>
+  <a href="journey.html">The Journey</a>
+  <a href="Model.html">Our Business Model</a>
+  <a href="getinvolved.html">See How to Get Involved</a>
+  <a href="timeline.html">Timeline</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <h2>Our Business Model</h2>
+  <p>We have assembled a network of engineers and NGOs to design, manufacture and implement a clean cookstove solution, specifically catered to the needs of the community.</p>
+  <p>It is our goal to engage the communities who would be served by our stove, and integrate their feedback into the design process.</p>
+  <p>Additionally, the stove would be manufactured in the communities it would serve via collective microfactories supplied and managed by our NGO partners in the region. The stove would then by sold on a graduated price scale appropriate for the specific community’s economic status. The stoves would also be available for wholesale purchase by NGO’s wishing to provide entire communities with these lifesaving appliances.</p>
+</div>
+<footer class="row">
+::before
+  <div class="container">
+    ::before
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+     
+</body>
+</html> 

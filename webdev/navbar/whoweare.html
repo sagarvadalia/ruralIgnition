@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background-color: lightblue;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="whoweare.html">Who We Are</a>
+  <a href="sudugini.html">Sudu Gini Clean Cookstove</a>
+  <a href="ourteam.html">Our Team</a>
+  <a href="journey.html">The Journey</a>
+  <a href="Model.html">Our Business Model</a>
+  <a href="getinvolved.html">See How to Get Involved</a>
+  <a href="timeline.html">Timeline</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <h2>Who We Are</h2>
+  <p>Rural Ignition is a nonprofit organization aimed at providing modern engineering solutions to problems in the developing world.</p>
+  <p>For our first project, we aim to alleviate the global indoor air pollution crisis, which affects an estimated 3 billion people. The problem stems from solid biomass fuel (wood, dung, and refuse)cooking practices leading to smoke inhalation in homes.</p>
+  <p>Our target is rural Sri Lanka, where nearly 16 million Sri Lankans use unventilated cook stoves and over 4,000 die annually due to respiratory illness caused by indoor air pollution. </p>
+
+</div>
+<footer class="row">
+::before
+  <div class="container">
+    ::before
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+     
+</body>
+</html> 
