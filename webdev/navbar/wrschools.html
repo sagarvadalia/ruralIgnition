@@ -86,6 +86,24 @@ ul#navigation li.last {
 </style>
 </head>
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1883608201877305',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -97,7 +115,7 @@ ul#navigation li.last {
   <a href="getinvolved.html">See How to Get Involved</a>
   <a href="timeline.html">Timeline</a>
 </div>
-
+<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"> </div>
 <div id="main">
   <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
   <h2>Sidenav Push Example</h2>
@@ -107,6 +125,7 @@ ul#navigation li.last {
   <li class="x"><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
   Share on Facebook
 </a></li>
+  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.example.com&amp;layout=standard&amp;show_faces=true&amp;action=like&amp;colorscheme=light" style="width:300px;height:20px;" id="lkbtn" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br> <a href='http://likebutton.net/en'>LikeButton.net</a> <script type='text/javascript' src='http://likebutton.net/fbauth?id=e1e0e01c182cec740d5c35ce09aa3e6b55587bfb'></script>
   <li class="x"><a title="2" href="#" >2</a></li>
   <li class="x"><a title="3" href="#" >3</a></li>
   <li class="x"><a title="4" href="#" >4</a></li>
