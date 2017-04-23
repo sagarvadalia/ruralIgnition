@@ -10,6 +10,7 @@ body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
     background-color: lightgreen;
+    height:100%;
 }
 
 .sidenav {
@@ -56,6 +57,32 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+ul#navigation {
+    height: 70px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-width: 1px 0;    
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Cham-WebFont', Arial, sans-serif;
+    background-color: #FFF;
+    position: fixed;   /* new */
+    bottom: 0;  /* new */
+    width: 100%;  /* new */
+}
+
+ul#navigation li {
+    display: inline;
+    margin-right: .75em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul#navigation li.last {
+    margin-right: 0;
+}
 </style>
 </head>
 <body>
@@ -75,11 +102,19 @@ body {
   <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; open</span>
   <h2>Sidenav Push Example</h2>
   <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
+  <ul id="navigation">
+  <li class="x"><a title="1" href="indexX-1.html" >1</a></li>
+  <li class="x"><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+  Share on Facebook
+</a></li>
+  <li class="x"><a title="2" href="#" >2</a></li>
+  <li class="x"><a title="3" href="#" >3</a></li>
+  <li class="x"><a title="4" href="#" >4</a></li>
+  <li class="x"><a title="5" href="#" >5</a></li>
+  <li class="contact" class="last"><a title="6" href="#" >6</a></li>
+  </ul>
 </div>
-<footer class="row">
-::before
-  <div class="container">
-    ::before
+
 
 <script>
 function openNav() {
@@ -93,6 +128,7 @@ function closeNav() {
     document.getElementById("main").style.marginLeft= "0";
     document.body.style.backgroundColor = "lightgreen";
 }
+
 </script>
      
 </body>
