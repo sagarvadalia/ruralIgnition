@@ -1,3 +1,7 @@
+<!-- all the css will have to be moved back to one file. also the nav bar will have to be moved out and called from all files so we dont have to recode it in every page. also design will need to be done. color scheme is green and yellow. -->
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +9,8 @@
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
-    background-color: lightblue;
+    background-color: lightgreen;
+    height:100%;
 }
 
 .sidenav {
@@ -25,7 +30,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #lightblue;
     display: block;
     transition: 0.3s
 }
@@ -40,6 +45,7 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: #lightgreen;
 }
 
 #main {
@@ -50,6 +56,32 @@ body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+ul#navigation {
+    height: 70px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-width: 1px 0;    
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Cham-WebFont', Arial, sans-serif;
+    background-color: #FFF;
+    position: fixed;   /* new */
+    bottom: 0;  /* new */
+    width: 100%;  /* new */
+}
+
+ul#navigation li {
+    display: inline;
+    margin-right: .75em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul#navigation li.last {
+    margin-right: 0;
 }
 </style>
 </head>
@@ -74,13 +106,20 @@ body {
   <p>August 2017 – Engineering survey and launch of pilot community</p>
   <p>January 2018 – Feedback analysis and design modification </p>
   <p>August 2018 – Launch of creator collective microfactory in pilot communities</p>
-
+  <ul id="navigation">
+  <li class="x"><a title="1" href="indexX-1.html" >1</a></li>
+  <li class="x"><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+  Share on Facebook
+</a></li>
+  <li class="x"><a title="2" href="#" >2</a></li>
+  <li class="x"><a title="3" href="#" >3</a></li>
+  <li class="x"><a title="4" href="#" >4</a></li>
+  <li class="x"><a title="5" href="#" >5</a></li>
+  <li class="contact" class="last"><a title="6" href="#" >6</a></li>
+  </ul>
 
 </div>
-<footer class="row">
-::before
-  <div class="container">
-    ::before
+
 
 <script>
 function openNav() {
