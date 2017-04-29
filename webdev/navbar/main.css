@@ -54,7 +54,7 @@ ul#navigation {
     font-size: 22px;
     font-family: 'Cham-WebFont', Arial, sans-serif;
     background-color: #yellow;
-    position: fixed;   /* new */
+    /*position: fixed;   /* new */*/
     bottom: 0;  /* new */
     width: 100%;  /* new */
 }
