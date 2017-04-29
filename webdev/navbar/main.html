@@ -1,0 +1,129 @@
+<!-- all the css will have to be moved back to one file. also the nav bar will have to be moved out and called from all files so we dont have to recode it in every page. also design will need to be done. color scheme is green and yellow. -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <link href="./main.css" type="text/css"
+      rel="stylesheet"/ >
+</head>
+<body>
+  <script>
+  $('.smooth').on('click', function() {
+      $.smoothScroll({
+          scrollElement: $('body'),
+          scrollTarget: '#' + this.id
+      });
+      
+      return false;
+  });
+  </script>
+<div id="mySidenav" class="sidenav">
+  <ul>
+    <li><a href="" f="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+    <li><a href="#whoweare">Who We Are</a></li>
+    <li><a href="#sudugini">Sudu Gini Clean Cookstove</a></li>
+    <li><a href="#ourteam">Our Team</a></li>
+    <li><a href="#journey">The Journey</a></li>
+    <li><a href="#Model">Our Business Model</a></li>
+    <li><a href="#getinvolved">See How to Get Involved</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+  </ul>
+</div>
+
+<div id="page1">
+  <a id="whoweare" class="smooth"></a>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <h2>Who We Are</h2>
+  <p>Rural Ignition is a nonprofit organization aimed at providing modern engineering solutions to problems in the developing world.</p>
+  <p>For our first project, we aim to alleviate the global indoor air pollution crisis, which affects an estimated 3 billion people. The problem stems from solid biomass fuel (wood, dung, and refuse)cooking practices leading to smoke inhalation in homes.</p>
+  <p>Our target is rural Sri Lanka, where nearly 16 million Sri Lankans use unventilated cook stoves and over 4,000 die annually due to respiratory illness caused by indoor air pollution. </p>
+</div>
+
+<div id="page2">
+  <a id="sudugini" class="smooth"></a>
+  <h2>Sudugini</h2>
+  <p>Chulha  Stove Design by Phillips Design </p>
+  <p>Uses Wood</p>
+  <p>Can be made locally (For the people, By the people)</p>
+  <p>Spur Small Business Development  </p>
+  <p>Made up of interchangeable parts, for easy repair and patience  </p>
+  <p>Low Emissions and Fuel Efficient </p>
+</div>
+
+<div id="page3">
+  <a id="ourteam" class="smooth"></a>
+  <h2>Our Team</h2>
+  <p>John Udara Mendis: Director</p>
+  <p>Mark Campmier: Assistant Director of Marketing and Business Development </p>
+  <p>Adrian Horzack: Assistant Director of R&D </p>
+  <p>R&D Team Will Carranza and Alex Thomas</p>
+  <p>Business Development: Daniel Alrarez</p>
+</div>
+
+<div id="page4">
+  <a id="journey" class="smooth"></a>
+  <h2>The Journey</h2>
+  <p>After service trip with Global Brigades, our founding members saw smoke engulf homes when cooking and became interested in clean cookstoves</p>
+  <p>Applied and Accepted into Zahn Center Social Impact Competition and Bootcamp</p>
+  <p>Won 2nd place and seed money to start up social impact venture </p>
+  <p>Working on our first pilot community in rural central Sri Lanka. </p>
+</div>
+
+<div id="page5">
+  <a id="getinvolved" class="smooth"></a>
+  <h2>How to Get Involvede</h2>
+  <p>Donate to fund to startup a community clean cookstove collective </p>
+  <p>Volunteer with our service trip with hand-on implementation of the clean cookstove model </p>
+  <p>Want your organization to work with us with clean cookstove implementation </p>
+</div>
+
+<div id="page6">
+  <a id="timeline" class="smooth"></a>
+  <h2>Timeline</h2>
+  <p>March 2017 – Prototype development </p>
+  <p>April 2017 – Lab testing and validation of Chula design</p>
+  <p>August 2017 – Engineering survey and launch of pilot community</p>
+  <p>January 2018 – Feedback analysis and design modification </p>
+  <p>August 2018 – Launch of creator collective microfactory in pilot communities</p>
+</div>
+
+<div id="page7">
+  <a id="model" class="smooth"></a>
+  <h2>Our Business Model</h2>
+  <p>We have assembled a network of engineers and NGOs to design, manufacture and implement a clean cookstove solution, specifically catered to the needs of the community.</p>
+  <p>It is our goal to engage the communities who would be served by our stove, and integrate their feedback into the design process.</p>
+  <p>Additionally, the stove would be manufactured in the communities it would serve via collective microfactories supplied and managed by our NGO partners in the region. The stove would then by sold on a graduated price scale appropriate for the specific community’s economic status. The stoves would also be available for wholesale purchase by NGO’s wishing to provide entire communities with these lifesaving appliances.</p>
+</div>
+
+<div id="footer">
+  <ul id="navigation">
+  <a class="x"><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+  Share on Facebook
+  <a href="#whoweare">Who We Are</a>
+  <a href="#sudugini">Sudu Gini Clean Cookstove</a>
+  <a href="#ourteam">Our Team</a>
+  <br />
+  <a href="#journey">The Journey</a>
+  <a href="#Model">Our Business Model</a> 
+  <a href="#getinvolved">See How to Get Involved</a>
+  <a href="#timeline">Timeline</a>
+  </ul>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+     
+</body>
+</html> 
